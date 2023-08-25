@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>TODO List</h1>
+    <h1 class="heading2">My TODO List</h1>
+    <input type="text" class="inputtask"></input>
+    <button class="additem">Add</button>
+    <ul class="todolist">
+    </ul>
+    <script>
+        const my_list = document.querySelector("ul.todolist")
+        const my_button = document.querySelector("button.additem")
+        const my_input = document.querySelector("input.inputtask")
+
+
+        //  ({firstname, ...others}) = ({firstname:"kush",lastname:"gdhfg",roll:"32"})
+        var arr = [4 ,5 ,5, 6, 6, 4,2]
+        let n = arr.length
+        for(let i = 0; i < n - 1; i++){
+            for(let j = 0; j < n - i; j++){
+                if(arr[j] > arr[j + 1]){
+                    let temp = arr[j];
+                    arr[j ] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+        } //bubble sort
+        console.log(arr)
+        // var arr2 = [23,34,4,43]
+        // var arr3 = arr.concat(arr2)
+        // console.log(arr3)
+        // let sum = 10;
+        // let x = 34;
+
+        // console.log(`This is sum: ${sum} This is x: ${x}`)
+        // var arr4 = arr.splice(0,3)
+        // console.log(arr)
+        
+
+
+    </script>
+</body>
+
+</html>
